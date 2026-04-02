@@ -1,0 +1,3 @@
+C:/uet/coding/Cong_tac/out/build/x64-Debug/CMakeFiles/StudentManagement.dir
+C:/uet/coding/Cong_tac/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/uet/coding/Cong_tac/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

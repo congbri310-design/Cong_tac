@@ -1,0 +1,64 @@
+# 🚀 URGENT: 5-MINUTE SETUP
+
+Your system is missing the C++ compiler and CMake. Here's the fastest fix:
+
+## Option 1: Visual Studio Community (Easiest - Includes Everything)
+
+### Windows Store Method (If Available)
+```
+1. Open Microsoft Store
+2. Search: "Visual Studio Community"
+3. Click "Get"
+4. Run installer
+5. Select "C++ Desktop Application"
+6. Install (~30 min)
+```
+
+### Direct Download Method (Most Reliable)
+```
+1. Go to: https://visualstudio.microsoft.com/vs/community/
+2. Click BLUE "Download Visual Studio Community" button
+3. Save and run VisualStudioSetup.exe
+4. When installer opens, click "Continue"
+5. Wait for package download
+6. Select "Desktop development with C++"
+7. Click "Install" (bottom right)
+8. Wait 20-30 minutes
+9. Click "Launch" when done
+```
+
+## Option 2: MinGW + CMake (Smaller, Command-line Only)
+
+```
+1. Download MinGW: https://www.mingw-w64.org/
+2. Run online installer
+3. Keep default settings, click Next
+4. Download CMake: https://cmake.org/download/
+5. Run cmake-3.x.x-windows-x86_64.msi
+6. Check "Add CMake to system PATH"
+```
+
+## After Installation - Build & Run
+
+```powershell
+# Close PowerShell and open NEW one
+cd c:\uet\coding\Cong_tac
+.\setup.bat
+```
+
+Then select build option (1 or 2) and run the executable.
+
+---
+
+## ⚠️ Important Notes
+
+- **You MUST install before things work**
+- **Restart PowerShell after installation** (PATH updates)
+- **Visual Studio is recommended** (easiest, includes everything)
+- **Estimated time: 30-45 minutes total**
+
+---
+
+**Can't install?** Contact your administrator or try:
+- https://tinyurl.com/vs-community (shorter link)
+- Ask IT department for compiler access

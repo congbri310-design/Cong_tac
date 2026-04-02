@@ -1,0 +1,280 @@
+# 🚀 CÀI ĐẶT - HƯỚNG DẪN TIẾNG VIỆT
+
+## ❌ VẤN ĐỀ
+
+Máy bạn **THIẾU** 2 thứ để chạy dự án:
+1. **Trình biên dịch C++** (Compiler)
+2. **CMake** (Công cụ build)
+
+---
+
+## ✅ GIẢI PHÁP - CỰC KỲ ĐƠN GIẢN
+
+### **CÁCH 1: Visual Studio Community (ĐỀ NGHỊ - Dễ nhất)**
+
+#### Bước 1: Tải Visual Studio
+```
+1. Vào: https://visualstudio.microsoft.com/vs/community/
+2. Bấm nút xanh "Download Visual Studio Community"
+3. Tệp "VisualStudioSetup.exe" sẽ được tải về
+4. Chạy file này
+```
+
+#### Bước 2: Cài đặt
+```
+1. Chờ installer mở ra
+2. Tìm và chọn: "Desktop development with C++"
+3. Bấm nút "Install" (góc dưới cùng bên phải)
+4. Đợi khoảng 30-45 phút (phụ thuộc tốc độ internet)
+5. Bấm "Launch" khi xong
+```
+
+**Kích thước**: 15 GB  
+**Thời gian**: 30-45 phút  
+**Ưu điểm**: Có IDE, dễ dùng, bao gồm mọi thứ cần thiết
+
+---
+
+### **CÁCH 2: MinGW (Nhẹ hơn)**
+
+#### Bước 1: Tải MinGW
+```
+1. Vào: https://www.mingw-w64.org/
+2. Tìm "Online Installer"
+3. Tải file installer
+4. Chạy file
+5. Giữ mặc định, bấm "Next" đến khi xong
+```
+
+**Kích thước**: 750 MB  
+**Thời gian**: 10-15 phút
+
+---
+
+### **BƯỚC 3: Cài CMake (Cần cho cả 2 cách)**
+
+#### Hướng dẫn
+```
+1. Vào: https://cmake.org/download/
+2. Tìm "Windows x64 Installer"
+3. Tải file "cmake-3.x.x-windows-x86_64.msi"
+4. Chạy installer
+5. ⭐ QUAN TRỌNG: Chọn ✓ "Add CMake to system PATH"
+6. Bấm "Install"
+7. Chờ xong (~5 phút)
+```
+
+**⭐ NHỚ**: Bắt buộc phải chọn "Add CMake to system PATH"!
+
+---
+
+## 🔧 SAU KHI CÀI ĐẶT
+
+### Bước 1: **Đóng tất cả PowerShell**
+```
+- Đóng tất cả cửa sổ PowerShell đang mở
+```
+
+### Bước 2: **Mở PowerShell MỚI**
+```
+- Nhấp phải trên Desktop
+- Chọn "Open PowerShell here"
+- HOẶC: Tìm kiếm "PowerShell" và chạy
+```
+
+### Bước 3: **Dán lệnh này vào PowerShell:**
+```powershell
+cd c:\uet\coding\Cong_tac
+.\setup.bat
+```
+
+### Bước 4: **Làm theo hướng dẫn trên màn hình**
+```
+- Nó sẽ hỏi bạn chọn 1 hoặc 2
+- Chọn 1 nếu dùng Visual Studio
+- Chọn 2 nếu dùng MinGW
+- Chờ build xong
+```
+
+### Bước 5: **Chạy chương trình**
+```
+Sau khi build xong, sẽ tự động chạy hoặc:
+
+.\build\Release\StudentManagement.exe
+```
+
+---
+
+## 📱 MẤY LÚC NÓ HỎI GÌ?
+
+| Nó hỏi | Trả lời |
+|--------|---------|
+| Architecture? | x86_64 |
+| Threads? | posix |
+| Exception? | seh hoặc dwarf |
+| Add to PATH? | ✓ Có (rất quan trọng!) |
+| Desktop development? | ✓ Chọn cái này |
+
+---
+
+## 🎯 CÁC BƯỚC TÓM TẮT
+
+### **Visual Studio (Dễ nhất)**
+```
+1. Tải Visual Studio Community
+   https://visualstudio.microsoft.com/vs/community/
+   
+2. Cài, chọn "C++ Desktop"
+   
+3. Tải CMake
+   https://cmake.org/download/
+   
+4. Cài CMake, chọn "Add to PATH"
+   
+5. Mở PowerShell MỚI
+   
+6. Chạy:
+   cd c:\uet\coding\Cong_tac
+   .\setup.bat
+   
+7. Chọn 1 khi được hỏi
+```
+
+### **MinGW (Nhẹ hơn)**
+```
+1. Tải MinGW https://www.mingw-w64.org/
+   
+2. Cài, giữ mặc định
+   
+3. Tải CMake https://cmake.org/download/
+   
+4. Cài CMake, chọn "Add to PATH"
+   
+5. Mở PowerShell MỚI
+   
+6. Chạy:
+   cd c:\uet\coding\Cong_tac
+   .\setup.bat
+   
+7. Chọn 2 khi được hỏi
+```
+
+---
+
+## ⏱️ THỜI GIAN DỰ KIẾN
+
+| Bước | Thời gian |
+|------|-----------|
+| Tải Visual Studio | 10-20 phút |
+| Cài Visual Studio | 20-30 phút |
+| Tải + cài CMake | 5-10 phút |
+| Xác minh | 1 phút |
+| Build dự án | 2-5 phút |
+| **TỔNG CỘNG** | **~45-60 phút** |
+
+---
+
+## ❓ HỎI - ĐÁP
+
+**Q: Cái nào phải cài trước?**  
+A: Visual Studio hoặc MinGW trước, rồi CMake sau
+
+**Q: Visual Studio hay MinGW?**  
+A: Visual Studio dễ hơn cho người mới (có GUI)
+
+**Q: Cần phải restart?**  
+A: Có, **phải đóng PowerShell cũ và mở cái mới**
+
+**Q: Sau cài xong làm gì?**  
+A: Chạy `cd c:\uet\coding\Cong_tac` rồi `.\setup.bat`
+
+**Q: Nó lâu không?**  
+A: Có, khoảng 45-60 phút lần đầu (tùy internet)
+
+**Q: Có thể cài vào disk khác không?**  
+A: Có, nhưng mặc định là tốt rồi
+
+---
+
+## 🚨 QUAN TRỌNG
+
+**NHẤT ĐỊNH PHẢI LÀM:**
+1. ✓ Cài Visual Studio hoặc MinGW
+2. ✓ Cài CMake
+3. ✓ Chọn "Add to PATH" khi cài CMake
+4. ✓ ĐÓNG PowerShell cũ rồi mở cái mới
+5. ✓ Chạy setup.bat từ PowerShell
+
+---
+
+## 🆘 KHI NÓ LỖI
+
+**Nếu nó nói "cmake is not recognized":**
+- Bạn chưa chọn "Add to PATH" khi cài CMake
+- Giải pháp: Gỡ CMake, cài lại, chọn "Add to PATH"
+
+**Nếu nó nói "compiler not found":**
+- Bạn chưa cài Visual Studio hoặc MinGW
+- Giải pháp: Cài Visual Studio hoặc MinGW trước
+
+**Nếu build fail:**
+- Xóa folder "build"
+- Chạy lại setup.bat
+
+---
+
+## ✅ KIỂM TRA CÁCH LÀM ĐÚNG
+
+Sau khi cài xong, mở PowerShell mới và gõ:
+
+```powershell
+cl.exe
+```
+Nếu hiện lên chữ `Microsoft (R) C/C++` = OK ✓
+
+```powershell
+cmake --version
+```
+Nếu hiện lên phiên bản (ví dụ `cmake version 3.27`) = OK ✓
+
+---
+
+## 🎯 BẮT ĐẦU NGAY
+
+### **VIDEO TỰA:**
+```
+1. Tải Visual Studio Community
+   Link: https://visualstudio.microsoft.com/vs/community/
+   
+2. Chạy, chọn "C++ Desktop", cài
+   
+3. Tải CMake
+   Link: https://cmake.org/download/
+   
+4. Chạy, chọn "Add to PATH", cài
+   
+5. Mở PowerShell mới
+   
+6. Gõ: cd c:\uet\coding\Cong_tac
+   
+7. Gõ: .\setup.bat
+   
+8. Thấy menu thì chọn 1 hoặc 2
+   
+9. Chờ tự động chạy chương trình
+```
+
+---
+
+## 📞 LIÊN HỆ
+
+Cần giúp? Xem các file:
+- **URGENT_SETUP.txt** - Cài đặt gấp
+- **INSTALL.md** - Chi tiết hơn
+- **CHECKLIST.md** - Danh sách kiểm tra
+
+---
+
+**Bây giờ bạn biết cần cài gì rồi!**  
+**Thời gian: ~45-60 phút**  
+**Hãy bắt đầu với Visual Studio Community - dễ nhất!** 🚀

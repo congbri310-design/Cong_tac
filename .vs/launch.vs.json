@@ -1,0 +1,12 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "StudentManagement.exe (bin\\StudentManagement.exe)",
+      "name": "StudentManagement.exe (bin\\StudentManagement.exe)"
+    }
+  ]
+}
