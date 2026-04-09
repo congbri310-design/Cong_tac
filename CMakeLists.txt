@@ -11,6 +11,9 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 set(SOURCES
     src/main.cpp
     src/backend/student.cpp
+    src/backend/user.cpp
+    src/backend/course.cpp
+    src/backend/grade.cpp
     src/backend/database.cpp
     src/frontend/ui_manager.cpp
     src/frontend/app_controller.cpp
